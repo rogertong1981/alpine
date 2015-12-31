@@ -11,6 +11,7 @@ RUN apk update && \
     echo 'package load successed.'
 
 COPY ./nginx.conf  /etc/nginx/nginx.conf
+COPY ./info.php  /var/www/info.php
 
 
 EXPOSE 80
