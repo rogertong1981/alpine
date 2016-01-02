@@ -4,7 +4,7 @@ ADD ./start.sh /run/
 
 RUN apk update && \
     apk add bash && \
-    apk add php php-pdo php-mysql php-fpm php-cgi php-mysql_pdo php-json && \
+    apk add php php-pdo php-mysql php-fpm php-cgi php-pdo_mysql php-json && \
     apk add nginx && \
     chmod a+x /run/start.sh && \
     rm -rf /var/cache/apk/* && \
