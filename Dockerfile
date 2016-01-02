@@ -7,8 +7,8 @@ RUN apk update && \
     apk add php php-pdo php-mysql php-fpm php-cgi php-pdo_mysql php-json && \
     apk add nginx && \
     chmod a+x /run/start.sh && \
-    mkdir /var/php/session && \
-    chmod a+w /var/php/session && \
+    mkdir -p /var/php/session && \
+    chmod 777 /var/php/session && \
     rm -rf /var/cache/apk/* && \
     echo 'package load successed.'
 
