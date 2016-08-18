@@ -8,6 +8,7 @@ RUN apk update && \
     apk add nginx && \
     chmod a+x /run/start.sh && \
     mkdir -p /var/php/session && \
+    mkdir -p /run/nginx && \
     chmod 777 /var/php/session && \
     rm -rf /var/cache/apk/* && \
     echo 'package load successed.'
