@@ -3,7 +3,7 @@ FROM alpine:latest
 ADD ./start.sh /run/
 
 RUN apk update && \
-    apk add bash php5 php5-pdo php5-mysql php5-fpm php5-cgi php5-pdo_mysql php5-json php5-xml php5-xmlrpc php5-zlib php5-mcrypt php5-imap php5-soap openssl php5-openssl php5-cli php5-common curl php5-curl php5-gd nginx && \
+    apk add bash php5 php5-pdo php5-mysql php5-fpm php5-cgi php5-pdo_mysql php5-json php5-xml php5-xmlrpc php5-zlib php5-mcrypt php5-imap php5-soap openssl php5-openssl php5-cli php5-common curl php5-curl nginx && \
     chmod a+x /run/start.sh && \
     mkdir -p /var/php/session && \
     mkdir -p /run/nginx && \
