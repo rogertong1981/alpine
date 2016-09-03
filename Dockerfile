@@ -9,6 +9,7 @@ RUN apk update && \
     mkdir -p /run/nginx && \
     chmod 777 /var/php/session && \
     rm -rf /var/cache/apk/* && \
+    echo "Asia/shanghai" > /etc/timezone && \
     echo 'package load successed.'
 
 COPY ./nginx.conf  /etc/nginx/nginx.conf
