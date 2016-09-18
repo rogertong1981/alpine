@@ -2,7 +2,7 @@ FROM alpine:latest
 MAINTAINER "cp.Chen" <chenpeidong@lonntec.com>
 
 RUN apk update && \
-    apk add bash tzdata php5 php5-pdo php5-mysql php5-fpm php5-cgi php5-pdo_mysql php5-json php5-xml php5-xmlrpc php5-zlib php5-mcrypt php5-imap php5-soap openssl php5-openssl php5-cli php5-common curl php5-curl php5-gd && \
+    apk add bash tzdata nginx php5 php5-pdo php5-mysql php5-fpm php5-cgi php5-pdo_mysql php5-json php5-xml php5-xmlrpc php5-zlib php5-mcrypt php5-imap php5-soap openssl php5-openssl php5-cli php5-common curl php5-curl php5-gd && \
     mkdir -p /var/php/session && \
     chmod 777 /var/php/session && \
     rm -rf /var/cache/apk/* && \
